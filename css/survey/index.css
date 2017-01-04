@@ -1,0 +1,11 @@
+/*==========NAVBAR=========*/
+.navbar {
+    background: url("../../assets/elements/navbar.png");
+    border-radius: 0px;
+}
+.social-text {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: white;
+    font-size: 12px;
+}
