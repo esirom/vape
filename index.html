@@ -172,6 +172,7 @@
                 <p id="productDescription"></p>
                 <h4>Features</h4>
                 <div id="productFeatures"></div>
+                <div id="productDescription2"></div>
                 <br>
                 <div id="productIngredients"></div>
             </div>
@@ -191,6 +192,9 @@
 
                 $('#productTitle').html(products.name);
                 $('#productDescription').html(products.description);
+                if (products.description2 != undefined) {
+                    $('#productDescription2').html(products.description2);
+                }
                 $.each(products.features, function( index, value ) {
                     if (value != undefined) {
                         $('#productFeatures').append('<li>'+value+'</li>');
