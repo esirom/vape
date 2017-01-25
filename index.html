@@ -173,7 +173,6 @@
                 <h4>Features</h4>
                 <div id="productFeatures"></div>
                 <br>
-                <h4>Active Ingredients</h4>
                 <div id="productIngredients"></div>
             </div>
             <div class="modal-footer">
@@ -198,6 +197,9 @@
                     }
                 });
                 $.each(products.activeIngredient, function( index, value ) {
+                    if (index == 1) {
+                        $('#productIngredients').append('<h4>Active Ingredients</h4>');
+                    }
                     if (value != undefined) {
                         $('#productIngredients').append('<li>'+value+'</li>');
                     }
